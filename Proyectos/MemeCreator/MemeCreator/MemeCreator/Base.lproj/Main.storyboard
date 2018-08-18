@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xCX-qJ-x9C">
+                                <rect key="frame" x="154" y="107" width="67" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="VRw-x5-Pj3"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="🙈"/>
+                                    <segment title="🐹"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentoControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="YKn-aW-7tX"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEl-0m-zY9">
+                                <rect key="frame" x="141" y="188" width="93" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mkm-j6-12h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Botton Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAQ-5Y-Ejq">
+                                <rect key="frame" x="130" y="954" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7326378758_6998e8784a_b" translatesAutoresizingMaskIntoConstraints="NO" id="Ijq-j2-YMv">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Botton Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fh-f8-pay">
+                                <rect key="frame" x="130" y="452" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O3d-iQ-DNp">
+                                <rect key="frame" x="154" y="531" width="67" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="UCM-cY-a9r"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="🦄"/>
+                                    <segment title="🐥"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentoControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="es9-Ce-LFQ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ijq-j2-YMv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2eX-CY-q5o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O3d-iQ-DNp" secondAttribute="bottom" constant="107" id="Ivw-WB-imZ"/>
+                            <constraint firstItem="dEl-0m-zY9" firstAttribute="top" secondItem="xCX-qJ-x9C" secondAttribute="bottom" constant="54" id="OFV-g3-2Q9"/>
+                            <constraint firstItem="fAQ-5Y-Ejq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="954" id="S1S-JF-Tv8"/>
+                            <constraint firstItem="Ijq-j2-YMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEX-RI-yK2"/>
+                            <constraint firstItem="Ijq-j2-YMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="XaL-vN-mmO"/>
+                            <constraint firstItem="xCX-qJ-x9C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="giJ-Gq-Ftm"/>
+                            <constraint firstItem="dEl-0m-zY9" firstAttribute="centerX" secondItem="Ijq-j2-YMv" secondAttribute="centerX" id="hg2-wH-NQ4"/>
+                            <constraint firstItem="xCX-qJ-x9C" firstAttribute="leading" secondItem="O3d-iQ-DNp" secondAttribute="leading" id="ixY-Vs-Ys1"/>
+                            <constraint firstItem="O3d-iQ-DNp" firstAttribute="centerX" secondItem="fAQ-5Y-Ejq" secondAttribute="centerX" id="qte-NW-89u"/>
+                            <constraint firstItem="Ijq-j2-YMv" firstAttribute="top" secondItem="dEl-0m-zY9" secondAttribute="bottom" constant="60" id="wcZ-bL-HaB"/>
+                            <constraint firstItem="xCX-qJ-x9C" firstAttribute="centerX" secondItem="dEl-0m-zY9" secondAttribute="centerX" id="z1B-82-hMa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="botCaptionLabel" destination="8Fh-f8-pay" id="5Uu-Hq-vDQ"/>
+                        <outlet property="botCaptionSegmentControl" destination="O3d-iQ-DNp" id="UG6-WW-PHS"/>
+                        <outlet property="topCaptionLabel" destination="8bC-Xf-vdC" id="7nF-Fz-SX3"/>
+                        <outlet property="topCaptionSegmentControl" destination="xCX-qJ-x9C" id="loi-qV-uHe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="7326378758_6998e8784a_b" width="1024" height="683"/>
+    </resources>
+</document>
